@@ -17,13 +17,13 @@
         /* Set gray background color and 100% height */
         
         .sidenav {
-            background-color: #f1f1f1;
+            background-color: lightpink;
             height: 100%;
         }
         /* Set black background color, white text and some padding */
         
         footer {
-            background-color: #555;
+            background-color: purple;
             color: white;
             padding: 15px;
         }
@@ -186,53 +186,145 @@
                 <h2>การใช้งาน Form</h2>
                 <h5><span class="glyphicon glyphicon-time"></span> Post by Sophon Sri, Feb 9, 2017.</h5>
                 <h5><span class="label label-success">Form</span></h5><br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้<br> &lt;form role=&quot;form&quot;&gt; &lt;/form> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม
-                    class ลงไปใน Tag form
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้
+                    <br> &lt;form role=&quot;form&quot;&gt; &lt;/form>
+                    <br> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม class ลงไปใน Tag form
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-inline&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form>
+                    <br>หรือ
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form>
+                    <br> <br>จากนั้นก็ให้คุณวาง &lt;div> เป็น Layout ของ Form ได้เลยโดยใน &lt;div> ให้คุณเติม class ที่ชื่อว่า form-group ลงไป
+                    <br><pre>&lt;div class=&quot;form-group&quot;&gt; &lt;/div></pre>
+                    <br><br>แล้วคุณต้องการให้กล่องมีความยาวขนาดไหนก็สามารถกำหนดได้ที่ตรงนี้เพราะพื้นฐานแล้วทาง bootstrap จะทำมาให้แบบเต็มจอ ดังนั้นคุณต้องมากำหนดขนาดของกล่องต่างๆที่ div ที่ครอบอยู่แบบนี้
+                    <br>&lt;div class=&quot;form-group&quot;&gt;
+                    <br>&nbsp;&nbsp;&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2&quot;&gt;Email&lt;/label&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col-sm-10&quot;&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;email&quot;class=&quot;form-control&quot;&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div> <br>&nbsp;&lt;/div><br>
+                    <br>จากนั้นคุณก็สามารถใส่ input ต่างๆลงไปได้เลย ซึ่งมีตัวอย่างตามนี้
+                </p>
+                <h4>Taxt Box</h4>
+                <p> <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;
+                    </pre>
+                </p>
+                <h4>Textarea</h4>
+                <h5><pre>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea>
+                    </pre>
+                </h5>
+                <h4>Checkboxes</h4>
+                <h5><pre>&lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; Option one<br>&lt;/label>
+                    </pre>
+                </h5>
+                <h4>Radios</h4>
+                <h5><pre>&lt;div class=&quot;radio&quot;&gt; <br> &nbsp;&nbsp; &lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; Option one <br>&nbsp;&nbsp; &lt;/label><br>&lt;/div>
+                    </pre>
+                </h5>
+                <h4>Selects</h4>
+                <h5><pre>&lt;select class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                   </pre>
+                </h5>
+                <h4>Select Multiple</h4>
+                <h5><pre>&lt;select multiple class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                    </pre>
+                </h5>
+                <p>
+                    Input Type ต่างๆของทาง Bootstrap นั้นรองรับ HTML5 ดังนั้นพวก input ที่ใช้ได้ก็จะมี <br> Text , password , datetime , date , month , time , week , number , email , url , search , tel , color <br>ซึ่งสะดวกมากทำให้เราไม่ต้องมานั่งทำปฏิทินให้ผู้ใช้เลือกแค่เลือก
+                    type เป็น date ก็ได้แล้ว <br>และถ้าอยากได้ข้อความช่วยใต้กล่องก็ใช้ class help-block ช่วยได้ครับ <br>มาลองดูตัวอย่าง form สักแบบ
+                </p>
+                <center> <img src="form.png" class="img-rounded" alt="Cinque Terre" width="400" height="350"></center>
+                <br>
+                <p>Code ที่ใช้จะเป็น</p>
+                <pre>&lt;form class="form-horizontal" action='' method="POST"&gt;
+ &lt;fieldset&gt;
+ &lt;div id="legend"&gt;
+ &lt;legend class=""&gt;Register&lt;/legend&gt;
+ &lt;/div&gt;
+ &lt;div class="control-group"&gt;
+ &lt;!-- Username --&gt;
+ &lt;label class="control-label" for="username"&gt;Username&lt;/label&gt;
+ &lt;div class="controls"&gt;
+ &lt;input type="text" id="username" name="username" placeholder="" class="input-xlarge"&gt;
+ &lt;p class="help-block"&gt;Username can contain any letters or numbers, without spaces&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="control-group"&gt;
+ &lt;!-- E-mail --&gt;
+ &lt;label class="control-label" for="email"&gt;E-mail&lt;/label&gt;
+ &lt;div class="controls"&gt;
+ &lt;input type="text" id="email" name="email" placeholder="" class="input-xlarge"&gt;
+ &lt;p class="help-block"&gt;Please provide your E-mail&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="control-group"&gt;
+ &lt;!-- Password--&gt;
+ &lt;label class="control-label" for="password"&gt;Password&lt;/label&gt;
+ &lt;div class="controls"&gt;
+ &lt;input type="password" id="password" name="password" placeholder="" class="input-xlarge"&gt;
+ &lt;p class="help-block"&gt;Password should be at least 4 characters&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="control-group"&gt;
+ &lt;!-- Password --&gt;
+ &lt;label class="control-label" for="password_confirm"&gt;Password (Confirm)&lt;/label&gt;
+ &lt;div class="controls"&gt;
+ &lt;input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge"&gt;
+ &lt;p class="help-block"&gt;Please confirm password&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="control-group"&gt;
+ &lt;!-- Button --&gt;
+ &lt;div class="controls"&gt;
+ &lt;button class="btn btn-success"&gt;Register&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+                <p>ลองนำไปประยุกต์ใช้งานดูกันนะครับ</p>
+                <hr>
 
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <br><br>
 
+                <p><span class="badge">2</span> Comments:</p><br>
 
-                    <hr>
-
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Submit</button>
-                    </form>
-                    <br><br>
-
-                    <p><span class="badge">2</span> Comments:</p><br>
-
-                    <div class="row">
-                        <div class="col-sm-2 text-center">
-                            <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                        </div>
-                        <div class="col-sm-10">
-                            <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <br>
-                        </div>
-                        <div class="col-sm-2 text-center">
-                            <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                        </div>
-                        <div class="col-sm-10">
-                            <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-                            <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <br>
-                            <p><span class="badge">1</span> Comment:</p><br>
-                            <div class="row">
-                                <div class="col-sm-2 text-center">
-                                    <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                                </div>
-                                <div class="col-xs-10">
-                                    <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-                                    <p>Me too! WOW!</p>
-                                    <br>
-                                </div>
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p><span class="badge">1</span> Comment:</p><br>
+                        <div class="row">
+                            <div class="col-sm-2 text-center">
+                                <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                                <p>Me too! WOW!</p>
+                                <br>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
