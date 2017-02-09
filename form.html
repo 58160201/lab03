@@ -46,8 +46,10 @@
     <div class="container-fluid">
         <div class="row content">
             <div class="col-sm-3 sidenav">
-                <h4>SOPHON Blog</h4>
-
+                <center>
+                    <h4>SOPHON Blog</h4>
+                </center>
+                <center> <img src="newyork.png" class="img-rounded" alt="Cinque Terre" width="150" height="150"></center><br>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
@@ -58,115 +60,121 @@
                 </div>
                 <br>
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="http://angsila.informatics.buu.ac.th/~58160201/887371/lab03/lab03.html">Home</a></li>
+                    <li><a href="http://angsila.informatics.buu.ac.th/~58160201/887371/lab03/lab03.html">Home</a></li>
                     <li><a href="http://angsila.informatics.buu.ac.th/~58160201/887371/lab03/grid.html">การใช้งาน Grid</a></li>
                     <li><a href="http://angsila.informatics.buu.ac.th/~58160201/887371/lab03/form.html">การใช้งาน Form</a></li>
                     <li><a href="http://angsila.informatics.buu.ac.th/~58160201/887371/lab02/lab02.html">About Me</a></li>
                 </ul><br>
 
             </div>
-            <hr>
-            <h2>การใช้งาน Form</h2>
-            <h5><span class="glyphicon glyphicon-time"></span> Post by Sophon Sri, Feb 9, 2017.</h5>
-            <h5><span class="label label-success">Form</span> <span class="label label-primary">Boostrap</span></h5><br>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้
-                <br><pre> &lt;form role=&quot;form&quot;&gt; &lt;/form></pre>
-                <br> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม class ลงไปใน Tag form
-                <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-inline&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
-                <br>หรือ
-                <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
-                <br> <br>จากนั้นก็ให้คุณวาง &lt;div> เป็น Layout ของ Form ได้เลยโดยใน &lt;div> ให้คุณเติม class ที่ชื่อว่า form-group ลงไป
-                <br><pre>&lt;div class=&quot;form-group&quot;&gt; &lt;/div></pre>
-                <br><br>แล้วคุณต้องการให้กล่องมีความยาวขนาดไหนก็สามารถกำหนดได้ที่ตรงนี้เพราะพื้นฐานแล้วทาง bootstrap จะทำมาให้แบบเต็มจอ ดังนั้นคุณต้องมากำหนดขนาดของกล่องต่างๆที่ div ที่ครอบอยู่แบบนี้
-                <br><pre>&lt;div class=&quot;form-group&quot;&gt;
+
+            <div class="col-sm-9">
+                <!--<h4><small>RECENT POSTS</small></h4>-->
+                <hr>
+                <h2>การใช้งาน Form</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Sophon Sri, Feb 9, 2017.</h5>
+                <h5><span class="label label-success">Form</span> <span class="label label-primary">Boostrap</span></h5><br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้
+                    <br><pre> &lt;form role=&quot;form&quot;&gt; &lt;/form></pre>
+                    <br> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม class ลงไปใน Tag form
+                    <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-inline&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
+                    <br>หรือ
+                    <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
+                    <br> <br>จากนั้นก็ให้คุณวาง &lt;div> เป็น Layout ของ Form ได้เลยโดยใน &lt;div> ให้คุณเติม class ที่ชื่อว่า form-group ลงไป
+                    <br><pre>&lt;div class=&quot;form-group&quot;&gt; &lt;/div></pre>
+                    <br><br>แล้วคุณต้องการให้กล่องมีความยาวขนาดไหนก็สามารถกำหนดได้ที่ตรงนี้เพราะพื้นฐานแล้วทาง bootstrap จะทำมาให้แบบเต็มจอ ดังนั้นคุณต้องมากำหนดขนาดของกล่องต่างๆที่ div ที่ครอบอยู่แบบนี้
+                    <br><pre>&lt;div class=&quot;form-group&quot;&gt;
                     <br>&nbsp;&nbsp;&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2&quot;&gt;Email&lt;/label&gt;
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col-sm-10&quot;&gt;
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;email&quot;class=&quot;form-control&quot;&gt;
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div> <br>&nbsp;&lt;/div><br></pre>
-                <br>จากนั้นคุณก็สามารถใส่ input ต่างๆลงไปได้เลย ซึ่งมีตัวอย่างตามนี้
-            </p>
-            <h4>Taxt Box</h4>
-            <p> <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;
+                    <br>จากนั้นคุณก็สามารถใส่ input ต่างๆลงไปได้เลย ซึ่งมีตัวอย่างตามนี้
+                </p>
+                <h4>Taxt Box</h4>
+                <p> <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;
                     </pre>
-            </p>
-            <h4>Textarea</h4>
-            <h5><pre>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea>
+                </p>
+                <h4>Textarea</h4>
+                <h5><pre>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea>
                     </pre>
-            </h5>
-            <h4>Checkboxes</h4>
-            <h5><pre>&lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; Option one<br>&lt;/label>
+                </h5>
+                <h4>Checkboxes</h4>
+                <h5><pre>&lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; Option one<br>&lt;/label>
                     </pre>
-            </h5>
-            <h4>Radios</h4>
-            <h5><pre>&lt;div class=&quot;radio&quot;&gt; <br> &nbsp;&nbsp; &lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; Option one <br>&nbsp;&nbsp; &lt;/label><br>&lt;/div>
+                </h5>
+                <h4>Radios</h4>
+                <h5><pre>&lt;div class=&quot;radio&quot;&gt; <br> &nbsp;&nbsp; &lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; Option one <br>&nbsp;&nbsp; &lt;/label><br>&lt;/div>
                     </pre>
-            </h5>
-            <h4>Selects</h4>
-            <h5><pre>&lt;select class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                </h5>
+                <h4>Selects</h4>
+                <h5><pre>&lt;select class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
                    </pre>
-            </h5>
-            <h4>Select Multiple</h4>
-            <h5><pre>&lt;select multiple class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                </h5>
+                <h4>Select Multiple</h4>
+                <h5><pre>&lt;select multiple class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
                     </pre>
-            </h5>
-            <p>
-                Input Type ต่างๆของทาง Bootstrap นั้นรองรับ HTML5 ดังนั้นพวก input ที่ใช้ได้ก็จะมี <br> Text , password , datetime , date , month , time , week , number , email , url , search , tel , color <br>ซึ่งสะดวกมากทำให้เราไม่ต้องมานั่งทำปฏิทินให้ผู้ใช้เลือกแค่เลือก
-                type เป็น date ก็ได้แล้ว <br>และถ้าอยากได้ข้อความช่วยใต้กล่องก็ใช้ class help-block ช่วยได้ครับ <br>มาลองดูตัวอย่าง form สักแบบ
-            </p>
-            <center> <img src="form.png" class="img-rounded" alt="Cinque Terre" width="400" height="350"></center>
-            <br>
-            <p>Code ที่ใช้จะเป็น</p>
-            <pre>&lt;form class="form-horizontal" action='' method="POST"&gt;
- &lt;fieldset&gt;
- &lt;div id="legend"&gt;
- &lt;legend class=""&gt;Register&lt;/legend&gt;
- &lt;/div&gt;
- &lt;div class="control-group"&gt;
- &lt;!-- Username --&gt;
- &lt;label class="control-label" for="username"&gt;Username&lt;/label&gt;
- &lt;div class="controls"&gt;
- &lt;input type="text" id="username" name="username" placeholder="" class="input-xlarge"&gt;
- &lt;p class="help-block"&gt;Username can contain any letters or numbers, without spaces&lt;/p&gt;
- &lt;/div&gt;
- &lt;/div&gt;
+                </h5>
+                <p>
+                    Input Type ต่างๆของทาง Bootstrap นั้นรองรับ HTML5 ดังนั้นพวก input ที่ใช้ได้ก็จะมี <br> Text , password , datetime , date , month , time , week , number , email , url , search , tel , color <br>ซึ่งสะดวกมากทำให้เราไม่ต้องมานั่งทำปฏิทินให้ผู้ใช้เลือกแค่เลือก
+                    type เป็น date ก็ได้แล้ว <br>และถ้าอยากได้ข้อความช่วยใต้กล่องก็ใช้ class help-block ช่วยได้ครับ <br>มาลองดูตัวอย่าง form สักแบบ
+                </p>
+                <center> <img src="form.png" class="img-rounded" alt="Cinque Terre" width="400" height="350"></center>
+                <br>
+                <p>Code ที่ใช้จะเป็น</p>
+                <pre>&lt;form class="form-horizontal" action='' method="POST"&gt;
+            &lt;fieldset&gt;
+            &lt;div id="legend"&gt;
+            &lt;legend class=""&gt;Register&lt;/legend&gt;
+            &lt;/div&gt;
+            &lt;div class="control-group"&gt;
+            &lt;!-- Username --&gt;
+            &lt;label class="control-label" for="username"&gt;Username&lt;/label&gt;
+            &lt;div class="controls"&gt;
+            &lt;input type="text" id="username" name="username" placeholder="" class="input-xlarge"&gt;
+             &lt;p class="help-block"&gt;Username can contain any letters or numbers, without spaces&lt;/p&gt;
+            &lt;/div&gt;
+             &lt;/div&gt;
  
- &lt;div class="control-group"&gt;
- &lt;!-- E-mail --&gt;
- &lt;label class="control-label" for="email"&gt;E-mail&lt;/label&gt;
- &lt;div class="controls"&gt;
- &lt;input type="text" id="email" name="email" placeholder="" class="input-xlarge"&gt;
- &lt;p class="help-block"&gt;Please provide your E-mail&lt;/p&gt;
- &lt;/div&gt;
- &lt;/div&gt;
+            &lt;div class="control-group"&gt;
+            &lt;!-- E-mail --&gt;
+             &lt;label class="control-label" for="email"&gt;E-mail&lt;/label&gt;
+            &lt;div class="controls"&gt;
+             &lt;input type="text" id="email" name="email" placeholder="" class="input-xlarge"&gt;
+            &lt;p class="help-block"&gt;Please provide your E-mail&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
  
- &lt;div class="control-group"&gt;
- &lt;!-- Password--&gt;
- &lt;label class="control-label" for="password"&gt;Password&lt;/label&gt;
- &lt;div class="controls"&gt;
- &lt;input type="password" id="password" name="password" placeholder="" class="input-xlarge"&gt;
- &lt;p class="help-block"&gt;Password should be at least 4 characters&lt;/p&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- 
- &lt;div class="control-group"&gt;
- &lt;!-- Password --&gt;
- &lt;label class="control-label" for="password_confirm"&gt;Password (Confirm)&lt;/label&gt;
- &lt;div class="controls"&gt;
- &lt;input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge"&gt;
- &lt;p class="help-block"&gt;Please confirm password&lt;/p&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- 
- &lt;div class="control-group"&gt;
- &lt;!-- Button --&gt;
- &lt;div class="controls"&gt;
- &lt;button class="btn btn-success"&gt;Register&lt;/button&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;/fieldset&gt;
-&lt;/form&gt;</pre>
-            <p>ลองนำไปประยุกต์ใช้งานดูกันนะครับ</p>
-            <br><br>
-            <li><a href="http://teerapuch.com/2014/coding/html-css/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-form-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-bootstrap-3/">ขอบคุณข้อมูลจาก : Teerapuch</a></li>
+            &lt;div class="control-group"&gt;
+            &lt;!-- Password--&gt;
+            &lt;label class="control-label" for="password"&gt;Password&lt;/label&gt;
+            &lt;div class="controls"&gt;
+            &lt;input type="password" id="password" name="password" placeholder="" class="input-xlarge"&gt;
+            &lt;p class="help-block"&gt;Password should be at least 4 characters&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="control-group"&gt;
+            &lt;!-- Password --&gt;
+            &lt;label class="control-label" for="password_confirm"&gt;Password (Confirm)&lt;/label&gt;
+            &lt;div class="controls"&gt;
+            &lt;input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge"&gt;
+            &lt;p class="help-block"&gt;Please confirm password&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="control-group"&gt;
+            &lt;!-- Button --&gt;
+            &lt;div class="controls"&gt;
+            &lt;button class="btn btn-success"&gt;Register&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/fieldset&gt;
+            &lt;/form&gt;</pre>
+                <p>ลองนำไปประยุกต์ใช้งานดูกันนะครับ</p>
+                <br><br>
+                <li><a href="http://teerapuch.com/2014/coding/html-css/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-form-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-bootstrap-3/">ขอบคุณข้อมูลจาก : Teerapuch</a></li>
 
-            <hr>
+                <hr>
+</body>
+
+</html>
