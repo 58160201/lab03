@@ -78,12 +78,14 @@
                     Grid system ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น </p>
                 <h4>การสร้าง Grid system</h4>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ
-                    ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา โดยในที่นี้คือเราจะใช้คลาส container &lt;div class=&quot;container&quot;&gt; &lt;/div>
+                    ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา โดยในที่นี้คือเราจะใช้คลาส
+                    <br><pre> container &lt;div class=&quot;container&quot;&gt; &lt;/div></pre>
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container" โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้
-                    <br>class="container"
+                    <br><pre>class="container"
                     <br>&lt;div class=&quot;container&quot;&gt;
                     <br> &lt;div class=&quot;row&quot;&gt;&lt;/div>
                     <br> &lt;/div>
+                    </pre>
                 </p>
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system แบ่งออกเป็น 4 ประเภทคือ
@@ -122,118 +124,111 @@
                         </table>
                     </center>
                     <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; โดยที่ &quot;int&quot; คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา &nbsp;ตัวอย่างเช่น เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่ &gt;= 768 px &nbsp;เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้&nbsp;
+                        <font face="Arial">โดยที่ &quot;int&quot; คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา &nbsp;ตัวอย่างเช่น เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่ &gt;= 768 px &nbsp;เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้&nbsp;</font>
                     </p>
-                    <div>&lt;!DOCTYPE html&gt;</div>
-                    <div>&lt;html lang=&quot;en&quot;&gt;</div>
-                    <div>&nbsp;&nbsp;</div>
-                    <div>&nbsp;&lt;head&gt;</div>
-                    <div>&nbsp; &lt;meta charset=&quot;UTF-8&quot; /&gt;</div>
-                    <div>&nbsp; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;</div>
-                    <div>&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&nbsp; &lt;title&gt;My First Boostrap Application&lt;/title&gt;</div>
-                    <div>&nbsp; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap.css&quot;&gt;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&nbsp; &lt;!--[if lt IE 9] &gt;</div>
-                    <div>&nbsp; &nbsp;&lt;script scr=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;</div>
-                    <div>&nbsp; &nbsp;&lt;script scr=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;&nbsp;</div>
-                    <div>&nbsp; &lt;![endif] --&gt;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&nbsp;&lt;/head&gt;</div>
-                    <div>&nbsp;&nbsp;</div>
-                    <div>&nbsp;&lt;body&gt;</div>
-                    <p>
-                        &lt;div class=&quot;container&quot;&gt;
+                    <pre>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&lt;!DOCTYPE html&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&lt;html lang=&quot;en&quot;&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp;&nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp;&lt;head&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;meta charset=&quot;UTF-8&quot; /&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;title&gt;My First Boostrap Application&lt;/title&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap.css&quot;&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;!--[if lt IE 9] &gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;&lt;script scr=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;&lt;script scr=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;&nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;![endif] --&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp;&lt;/head&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp;&nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp;&lt;body&gt;</div>
+                    <p style="margin-left: 40px;">
+                        <font face="Arial">&lt;div class=&quot;container&quot;&gt;</font>
                     </p>
-                    <p>
-                        &lt;div class=&quot;row&quot;&gt;
+                    <p style="margin-left: 80px;">
+                        <font face="Arial">&lt;div class=&quot;row&quot;&gt;</font>
                     </p>
-                    <p>&nbsp;&lt;div class=&quot;col-sm-6&quot;&gt;</span>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&nbsp;&lt;div class=&quot;col-sm-6&quot;&gt;</span></p>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&lt;h4&gt;Column1&lt;/h4&gt;</span></p>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&lt;/div&gt;</span></p>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&lt;div class=&quot;col-sm-6&quot;&gt;</span></p>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&lt;h4&gt;Column2&lt;/h4&gt;</span></p>
+                    <p style="margin-left: 120px;"><span style="font-family: Arial;">&lt;/div&gt;</span></p>
+                    <p style="margin-left: 80px;"><span style="font-family: Arial;">&lt;/div&gt;</span></p>
+                    <p style="margin-left: 40px;">
+                        <font face="Arial">&lt;/div&gt;</font>
                     </p>
-                    <p>&lt;h4&gt;Column1&lt;/h4&gt;</span>
-                    </p>
-                    <p>&lt;/div&gt;</span>
-                    </p>
-                    <p>&lt;div class=&quot;col-sm-6&quot;&gt;</span>
-                    </p>
-                    <p>&lt;h4&gt;Column2&lt;/h4&gt;</span>
-                    </p>
-                    <p>&lt;/div&gt;</span>
-                    </p>
-                    <p>&lt;/div&gt;</span>
-                    </p>
-                    <p>
-                        &lt;/div&gt;
-                    </p>
-                    <div>&nbsp; &lt;script src=&quot;js/jquery-1.11.1.js&quot;&gt;&lt;/script&gt;</div>
-                    <div>&nbsp; &lt;script src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;</div>
-                    <div>&nbsp; &nbsp;</div>
-                    <div>&lt;/body&gt;<br /> &lt;/html&gt; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;script src=&quot;js/jquery-1.11.1.js&quot;&gt;&lt;/script&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &lt;script src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&nbsp; &nbsp;</div>
+                    <div style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&lt;/body&gt;<br />
+                        <span style="color: rgb(59, 59, 59); font-family: Arial, 'Open Sans', tahoma, sans-serif;">&lt;/html&gt;</span>&nbsp;</div>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
+                    </pre>
+                    <h5>ขอบคุณข้อมูลจาก : http://www.softmelt.com/article.php?id=544</h5>
+                    <br><br>
 
-
-                </p>
-                <h5>ขอบคุณข้อมูลจาก : http://www.softmelt.com/article.php?id=544</h5>
-                <br><br>
-
-                <!--<h4><small>RECENT POSTS</small></h4>-->
-                <hr>
-                <h2>การใช้งาน Form</h2>
-                <h5><span class="glyphicon glyphicon-time"></span> Post by Sophon Sri, Feb 9, 2017.</h5>
-                <h5><span class="label label-success">Form</span></h5><br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้
-                    <br> &lt;form role=&quot;form&quot;&gt; &lt;/form>
-                    <br> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม class ลงไปใน Tag form
-                    <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-inline&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form>
-                    <br>หรือ
-                    <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form>
-                    <br> <br>จากนั้นก็ให้คุณวาง &lt;div> เป็น Layout ของ Form ได้เลยโดยใน &lt;div> ให้คุณเติม class ที่ชื่อว่า form-group ลงไป
-                    <br><pre>&lt;div class=&quot;form-group&quot;&gt; &lt;/div></pre>
-                    <br><br>แล้วคุณต้องการให้กล่องมีความยาวขนาดไหนก็สามารถกำหนดได้ที่ตรงนี้เพราะพื้นฐานแล้วทาง bootstrap จะทำมาให้แบบเต็มจอ ดังนั้นคุณต้องมากำหนดขนาดของกล่องต่างๆที่ div ที่ครอบอยู่แบบนี้
-                    <br>&lt;div class=&quot;form-group&quot;&gt;
+                    <!--<h4><small>RECENT POSTS</small></h4>-->
+                    <hr>
+                    <h2>การใช้งาน Form</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by Sophon Sri, Feb 9, 2017.</h5>
+                    <h5><span class="label label-success">Form</span> <span class="label label-primary">Boostrap</span></h5><br>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เริ่มต้นกันด้วยเมื่อคุณสร้าง &lt;form&gt; ขึ้นมาให้คุณเติม role=“form” ลงไปก่อนแบบนี้
+                        <br><pre> &lt;form role=&quot;form&quot;&gt; &lt;/form></pre>
+                        <br> แล้วคุณก็เลือกว่าจะสร้าง form แบบ inline หรือแบบ Horizintal ซึ่งทำได้โดยการเติม class ลงไปใน Tag form
+                        <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-inline&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
+                        <br>หรือ
+                        <br> <pre>&nbsp;&nbsp;&nbsp;&nbsp; &lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/form></pre>
+                        <br> <br>จากนั้นก็ให้คุณวาง &lt;div> เป็น Layout ของ Form ได้เลยโดยใน &lt;div> ให้คุณเติม class ที่ชื่อว่า form-group ลงไป
+                        <br><pre>&lt;div class=&quot;form-group&quot;&gt; &lt;/div></pre>
+                        <br><br>แล้วคุณต้องการให้กล่องมีความยาวขนาดไหนก็สามารถกำหนดได้ที่ตรงนี้เพราะพื้นฐานแล้วทาง bootstrap จะทำมาให้แบบเต็มจอ ดังนั้นคุณต้องมากำหนดขนาดของกล่องต่างๆที่ div ที่ครอบอยู่แบบนี้
+                        <br><pre>&lt;div class=&quot;form-group&quot;&gt;
                     <br>&nbsp;&nbsp;&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2&quot;&gt;Email&lt;/label&gt;
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col-sm-10&quot;&gt;
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;email&quot;class=&quot;form-control&quot;&gt;
-                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div> <br>&nbsp;&lt;/div><br>
-                    <br>จากนั้นคุณก็สามารถใส่ input ต่างๆลงไปได้เลย ซึ่งมีตัวอย่างตามนี้
-                </p>
-                <h4>Taxt Box</h4>
-                <p> <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div> <br>&nbsp;&lt;/div><br></pre>
+                        <br>จากนั้นคุณก็สามารถใส่ input ต่างๆลงไปได้เลย ซึ่งมีตัวอย่างตามนี้
+                    </p>
+                    <h4>Taxt Box</h4>
+                    <p> <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;
                     </pre>
-                </p>
-                <h4>Textarea</h4>
-                <h5><pre>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea>
+                    </p>
+                    <h4>Textarea</h4>
+                    <h5><pre>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea>
                     </pre>
-                </h5>
-                <h4>Checkboxes</h4>
-                <h5><pre>&lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; Option one<br>&lt;/label>
+                    </h5>
+                    <h4>Checkboxes</h4>
+                    <h5><pre>&lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; Option one<br>&lt;/label>
                     </pre>
-                </h5>
-                <h4>Radios</h4>
-                <h5><pre>&lt;div class=&quot;radio&quot;&gt; <br> &nbsp;&nbsp; &lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; Option one <br>&nbsp;&nbsp; &lt;/label><br>&lt;/div>
+                    </h5>
+                    <h4>Radios</h4>
+                    <h5><pre>&lt;div class=&quot;radio&quot;&gt; <br> &nbsp;&nbsp; &lt;label><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; Option one <br>&nbsp;&nbsp; &lt;/label><br>&lt;/div>
                     </pre>
-                </h5>
-                <h4>Selects</h4>
-                <h5><pre>&lt;select class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                    </h5>
+                    <h4>Selects</h4>
+                    <h5><pre>&lt;select class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
                    </pre>
-                </h5>
-                <h4>Select Multiple</h4>
-                <h5><pre>&lt;select multiple class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
+                    </h5>
+                    <h4>Select Multiple</h4>
+                    <h5><pre>&lt;select multiple class=&quot;form-control&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>1&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;option>2&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>3&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>4&lt;/option><br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;option>5&lt;/option><br>&lt;/select>
                     </pre>
-                </h5>
-                <p>
-                    Input Type ต่างๆของทาง Bootstrap นั้นรองรับ HTML5 ดังนั้นพวก input ที่ใช้ได้ก็จะมี <br> Text , password , datetime , date , month , time , week , number , email , url , search , tel , color <br>ซึ่งสะดวกมากทำให้เราไม่ต้องมานั่งทำปฏิทินให้ผู้ใช้เลือกแค่เลือก
-                    type เป็น date ก็ได้แล้ว <br>และถ้าอยากได้ข้อความช่วยใต้กล่องก็ใช้ class help-block ช่วยได้ครับ <br>มาลองดูตัวอย่าง form สักแบบ
-                </p>
-                <center> <img src="form.png" class="img-rounded" alt="Cinque Terre" width="400" height="350"></center>
-                <br>
-                <p>Code ที่ใช้จะเป็น</p>
-                <pre>&lt;form class="form-horizontal" action='' method="POST"&gt;
+                    </h5>
+                    <p>
+                        Input Type ต่างๆของทาง Bootstrap นั้นรองรับ HTML5 ดังนั้นพวก input ที่ใช้ได้ก็จะมี <br> Text , password , datetime , date , month , time , week , number , email , url , search , tel , color <br>ซึ่งสะดวกมากทำให้เราไม่ต้องมานั่งทำปฏิทินให้ผู้ใช้เลือกแค่เลือก
+                        type เป็น date ก็ได้แล้ว <br>และถ้าอยากได้ข้อความช่วยใต้กล่องก็ใช้ class help-block ช่วยได้ครับ <br>มาลองดูตัวอย่าง form สักแบบ
+                    </p>
+                    <center> <img src="form.png" class="img-rounded" alt="Cinque Terre" width="400" height="350"></center>
+                    <br>
+                    <p>Code ที่ใช้จะเป็น</p>
+                    <pre>&lt;form class="form-horizontal" action='' method="POST"&gt;
  &lt;fieldset&gt;
  &lt;div id="legend"&gt;
  &lt;legend class=""&gt;Register&lt;/legend&gt;
@@ -282,49 +277,51 @@
  &lt;/div&gt;
  &lt;/fieldset&gt;
 &lt;/form&gt;</pre>
-                <p>ลองนำไปประยุกต์ใช้งานดูกันนะครับ</p>
-                <hr>
+                    <p>ลองนำไปประยุกต์ใช้งานดูกันนะครับ</p>
+                    <br><br>
+                    <h5>ขอบคุณข้อมูลจาก : http://teerapuch.com/2014/coding/html-css/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-form-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-bootstrap-3/</h5>
+                    <hr>
 
-                <h4>Leave a Comment:</h4>
-                <form role="form">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
-                </form>
-                <br><br>
+                    <h4>Leave a Comment:</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    <br><br>
 
-                <p><span class="badge">2</span> Comments:</p><br>
+                    <p><span class="badge">2</span> Comments:</p><br>
 
-                <div class="row">
-                    <div class="col-sm-2 text-center">
-                        <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                    </div>
-                    <div class="col-sm-10">
-                        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <br>
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                    </div>
-                    <div class="col-sm-10">
-                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <br>
-                        <p><span class="badge">1</span> Comment:</p><br>
-                        <div class="row">
-                            <div class="col-sm-2 text-center">
-                                <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-                                <p>Me too! WOW!</p>
-                                <br>
+                    <div class="row">
+                        <div class="col-sm-2 text-center">
+                            <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                            <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                            <p><span class="badge">1</span> Comment:</p><br>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                                </div>
+                                <div class="col-xs-10">
+                                    <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                                    <p>Me too! WOW!</p>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
